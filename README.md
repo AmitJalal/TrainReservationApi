@@ -2,8 +2,11 @@
 
 
 - [Getting started with the Project](#getting-started-with-the-project)
-- [Hello](#hello)
-- [Documentation](#documentation)
+- [How to use the API](#how-to-use-the-api)
+   - [Create Coach with 80 seats](#create-coach-with-80-seats)
+   - [Get Available Seats](#get-available-seats)
+   - [Make a Reservation in a coach for booking seats](#make-a-reservation-in-a-coach-for-booking-seats)
+   -[List all seats of all coaches](#list-all-seats-of-all-coaches)
 
 ## Getting started with the project
 
@@ -19,7 +22,6 @@
     ``` 
     PORT=5000
     MONGO_URL=mongodb+srv://<username>:<password>@abcd.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
-
     ```
 - After basic configuration, run the server in your local machine :
     ```   
@@ -27,28 +29,12 @@
     ```
 
 
+## How to use the API :
 
+    ### Create Coach With 80 Seats :
 
+    ### Get Available Seats :
 
+    ### Make a Reservation in a coach for booking seats :
 
-
-
-
-
-
-# Hello
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Documentation
+    ### List all seats of all coaches :
