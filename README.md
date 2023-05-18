@@ -22,7 +22,10 @@ MONGO_URL=mongodb+srv://<username>:<password>@abcd.mongodb.net/<DB_NAME>?retryWr
 
 ```
 - After basic configuration, run the server in your local machine :
-``` npm run dev or npm start  ```
+```
+ npm run dev or npm start 
+
+```
 
 
 
