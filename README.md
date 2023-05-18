@@ -53,6 +53,49 @@
      ```
 
 ### Get Available Seats
+- To view how many seats are available:
+  - Select Coach type:
+    ```
+     {
+       "coach_type": "CC"
+     } 
+    ```
+  - Hit the following api to view the available seats of particular caoch:
+    ```
+     http://localhost:5000/api/v1/seat/available
+    ```
+- On successfull response, we must be able to see the data as follows:
+  ```
+   {
+     "coach_type": "CC",
+     "remaining_seats": 60,
+     "total_seats": 80,
+     "availableSeats": [
+        {
+            "_id": "646664bf7dc8ee2d14a21643",
+            "seatNumber": 5,
+            "isReserved": false,
+            "coach": "646664bf7dc8ee2d14a21639",
+            "coach_type": "CC",
+            "coach_designation": "AC Chair Car",
+            "__v": 0
+        },
+        .
+        .
+        .
+        {
+            "_id": "646664c67dc8ee2d14a216b9",
+            "seatNumber": 64,
+            "isReserved": false,
+            "coach": "646664bf7dc8ee2d14a21639",
+            "coach_type": "CC",
+            "coach_designation": "AC Chair Car",
+            "__v": 0
+        }
+        ]
+    }
+  ```   
+
 
 ### Make a Reservation in a coach for booking seats
 
