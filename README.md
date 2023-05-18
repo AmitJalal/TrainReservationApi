@@ -6,7 +6,7 @@
    - [Create Coach with 80 seats](#create-coach-with-80-seats)
    - [Get Available Seats](#get-available-seats)
    - [Make a Reservation in a coach for booking seats](#make-a-reservation-in-a-coach-for-booking-seats)
-   -[List all seats of all coaches](#list-all-seats-of-all-coaches)
+   - [List all seats of all coaches](#list-all-seats-of-all-coaches)
 
 ## Getting started with the project
 
