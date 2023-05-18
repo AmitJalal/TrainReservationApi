@@ -29,7 +29,7 @@
     ```
 
 
-### How to use the API
+## How to use the API
 
 ### Create Coach With 80 Seats
 
