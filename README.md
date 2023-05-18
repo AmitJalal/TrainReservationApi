@@ -1,13 +1,15 @@
 # TrainReservationApi
-------------------------------------------
-- [Getting started with the Project](#getting-started-with-the-project)
 
--[Hello](#hello)
+## Jump to : 
 
--[Documentation](#documentation)
+    - [Getting started with the Project](#getting-started-with-the-project)
+
+    -[Hello](#hello)
+
+    -[Documentation](#documentation)
 
 # Getting started with the project
-====================================
+
 ## [Project Setup] (# Hello)
 
 - Clone the repo.
@@ -28,8 +30,7 @@
 
 # Hello
 
-========================================
--------------------------------------------
+
 
 
 
@@ -43,4 +44,3 @@
 
 
 # Documentation
-==============================
