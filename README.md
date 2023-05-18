@@ -17,14 +17,13 @@
 
 - .env example :
     ``` 
-        PORT=5000
-        MONGO_URL=mongodb+srv://<username>:<password>@abcd.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
+    PORT=5000
+    MONGO_URL=mongodb+srv://<username>:<password>@abcd.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
 
     ```
 - After basic configuration, run the server in your local machine :
     ```   
      npm run dev or npm start 
-     
     ```
 
 
