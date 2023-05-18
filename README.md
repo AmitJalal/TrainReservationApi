@@ -2,7 +2,7 @@
 ## Welcome to the project
 
 ## [Project Setup] (# Hello)
-github.com/AmitJalal/TrainReservationApi/main/README.md?plain=1#L22
+
 - Clone the repo.
 - `npm i` or `npm install`.
 - Set-up `.env` file to add your environment variables.
