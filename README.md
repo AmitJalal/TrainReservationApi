@@ -31,10 +31,10 @@
 
 ## How to use the API :
 
-### Create Coach With 80 Seats :
+## Create Coach With 80 Seats :
 
-### Get Available Seats :
+## Get Available Seats :
 
-### Make a Reservation in a coach for booking seats :
+## Make a Reservation in a coach for booking seats :
 
 ### List all seats of all coaches :
