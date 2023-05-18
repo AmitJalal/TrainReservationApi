@@ -44,9 +44,9 @@
         }
     ```
   - Now hit the api:    
-        ```
+     ```
          http://localhost:5000/api/v1/initializeCoach
-        ```
+     ```
   - On successfull response, we will get the following response:
      ```
       "msg": "2A Caoch with 80 seats created successfully!!"
