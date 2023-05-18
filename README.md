@@ -15,6 +15,13 @@
     - `PORT = <PORT>`
     -  `MONGO_URL = <Your MongoDB URL(Or MongoDB ATLAS connection string) `
 
+- .env example :
+``` 
+PORT=5000
+MONGO_URL=mongodb+srv://<username>:<password>@abcd.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
+
+```
+
 
 
 
