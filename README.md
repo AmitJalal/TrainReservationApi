@@ -3,9 +3,9 @@
 
 - [Getting started with the Project](#getting-started-with-the-project)
 
--[Hello](#hello)
+- [Hello](#hello)
 
--[Documentation](#documentation)
+- [Documentation](#documentation)
 
 # Getting started with the project
 
