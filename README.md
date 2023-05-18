@@ -5,9 +5,9 @@
 - [Hello](#hello)
 - [Documentation](#documentation)
 
-# Getting started with the project
+## Getting started with the project
 
-## [Project Setup] (# Hello)
+## Project Setup : 
 
 - Clone the repo.
 - `npm i` or `npm install`.
