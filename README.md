@@ -32,6 +32,25 @@
 ## How to use the API
 
 ### Create Coach With 80 Seats
+- first of all we must have available seats to make a reservation. So create a coach with 80 seats with coach specifications as follows:
+  - coach details:
+    ```
+    {
+        "coach_number":5,
+        "coach_type": "2A",
+        "coach_designation": "AC two tier",
+        "caoch_seats": "7 seats in a row",
+        "total_seats":80
+    }
+    ```
+- Now hit the api:    
+    ```
+    http://localhost:5000/api/v1/initializeCoach
+    ```
+- On successfull response, we will get the following response:
+    ```
+    "msg": "2A Caoch with 80 seats created successfully!!"
+    ```
 
 ### Get Available Seats
 
