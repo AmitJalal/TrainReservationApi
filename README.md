@@ -128,3 +128,73 @@
    }
   ``` 
 ### List all seats of all coaches
+- To list all the coaches with all seats, hit the api:
+  ```
+  http://localhost:5000/api/v1/seat/all
+  ```
+- On successfull response, the data will look like:  
+  ```
+   {
+    "total_coach": 5,
+    "total_seats": 400,
+    "coach": [
+         {
+            "_id": "646664bf7dc8ee2d14a21639",
+            "coach_number": 1,
+            "coach_type": "CC",
+            "coach_designation": "AC Chair Car",
+            "caoch_seats": "7 seats in a row",
+            "total_seats": 80,
+            "seats": [ ...
+             ],
+             "__v": 1
+         },
+         {
+            "_id": "646665b65816b143b292aa0d",
+            "coach_number": 2,
+            "coach_type": "EC",
+            "coach_designation": "Executive Chair Car",
+            "caoch_seats": "7 seats in a row",
+            "total_seats": 80,
+            "seats": [...
+            ],
+            "__v": 1
+         },
+         {
+            "_id": "64666bb259051d5a4446b8fe",
+            "coach_number": 3,
+            "coach_type": "1A",
+            "coach_designation": "AC First Class",
+            "caoch_seats": "7 seats in a row",
+            "total_seats": 80,
+            "seats": [...
+             ],
+            "__v": 1
+         },
+         {
+            "_id": "64666c3159051d5a4446b9a3",
+            "coach_number": 4,
+            "coach_type": "SL",
+            "coach_designation": "Sleeper Class",
+            "caoch_seats": "7 seats in a row",
+            "total_seats": 80,
+            "seats": [...
+             ],
+            "__v": 1
+         },
+         {
+            "_id": "646697d0d43e01b10fb88252",
+            "coach_number": 5,
+            "coach_type": "2A",
+            "coach_designation": "AC two tier",
+            "caoch_seats": "7 seats in a row",
+            "total_seats": 80,
+            "seats": [...
+             ],
+            "__v": 1
+         } 
+      ]
+   }  
+  ```
+
+  
