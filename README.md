@@ -100,10 +100,11 @@
 ### Make a Reservation in a coach for booking seats
 - To make a reservation, one must select valid number of seats
 - A person is allowed to book seats between range 1-7.
-  - Provide the details about how many reservations you want to make:
+  - Provide the details about how many reservations you want to make in specific coach:
     ```
      {
-       "totalSeats":2
+       "coach_type": "SL",
+       "totalSeats":5
      }
     ```
   - Now hit the following api, to book the seats:
@@ -115,16 +116,28 @@
    {
       "message": "Seats booked successfully.",
       "seats": [
-           {
-              "id": "646664bf7dc8ee2d14a21643",
-              "seatNumber": 5
-           },
-           {
-              "id": "646664bf7dc8ee2d14a21645",
-              "seatNumber": 6
-           }
-        ],
-      "totalSeatsLeft": 58
+        {
+            "id": "64666c3759051d5a4446ba35",
+            "seatNumber": 73
+        },
+        {
+            "id": "64666c3759051d5a4446ba37",
+            "seatNumber": 74
+        },
+        {
+            "id": "64666c3759051d5a4446ba39",
+            "seatNumber": 75
+        },
+        {
+            "id": "64666c3759051d5a4446ba3b",
+            "seatNumber": 76
+        },
+        {
+            "id": "64666c3759051d5a4446ba3d",
+            "seatNumber": 77
+        }
+    ],
+    "totalSeatsLeft": 70
    }
   ``` 
 ### List all seats of all coaches
