@@ -46,6 +46,7 @@ const getAvailableSeats = async (req, res) => {
 
 const bookSeats = async (req, res, next) => {
   const seatsToBeBooked = req.body.totalSeats;
+  const coach_type = req.body.coach_type;
   // console.log(seatsToBeBooked);
 
   // Check if the requested number of seats is valid
@@ -57,7 +58,8 @@ const bookSeats = async (req, res, next) => {
 
   try {
     // Find  available seats
-    const coach = await Coach.findOne({}).populate('seats');
+    const coach = await Coach.findOne({ coach_type }).populate('seats');
+    console.log(coach)
     const availableSeats = coach.seats.filter((seat) => !seat.isReserved);
     // console.log(availableSeats.length);
     let seatsCanBeBooked = availableSeats.length;
