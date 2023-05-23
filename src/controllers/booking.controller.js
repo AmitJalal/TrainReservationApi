@@ -5,13 +5,27 @@ const getAllSeats = async (req, res) => {
   try {
     const coach = await Coach.find({}).populate('seats');
     // console.log('-->getAllSeats', coach);
-    res
-      .status(200)
-      .json({
-        total_coach: coach.length,
-        total_seats: coach.length * 80,
-        coach,
-      });
+
+    const remaining_seats = coach
+      .map((type) => type.seats.filter((seat) => !seat.isReserved))
+      .map((seat) => seat.length);
+
+    let sumOfRemainingSeats = 0;
+
+    for (const seats of remaining_seats) {
+      sumOfRemainingSeats += seats;
+    }
+    // console.log(remaining_seats, sumOfRemainingSeats);
+
+    {
+      /**  =============== RESPONSE ====================== */
+    }
+    res.status(200).json({
+      total_coach: coach.length,
+      total_seats: coach.length * 80,
+      total_availableSeats: sumOfRemainingSeats,
+      coach,
+    });
   } catch (error) {
     console.log('-->getAllSeats', error);
     res.status(500).json({ Error: error.message });
@@ -59,7 +73,7 @@ const bookSeats = async (req, res, next) => {
   try {
     // Find  available seats
     const coach = await Coach.findOne({ coach_type }).populate('seats');
-    console.log(coach)
+    console.log(coach);
     const availableSeats = coach.seats.filter((seat) => !seat.isReserved);
     // console.log(availableSeats.length);
     let seatsCanBeBooked = availableSeats.length;
